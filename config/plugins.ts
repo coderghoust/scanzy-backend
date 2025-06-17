@@ -7,4 +7,7 @@ export default () => ({
       encryptionKey: process.env.CLOUDINARY_ENCRYPTION_KEY,
     },
   },
+  'content-type-builder': {
+    enabled: true,
+  },
 });
