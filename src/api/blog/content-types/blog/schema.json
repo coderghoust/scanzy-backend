@@ -62,6 +62,10 @@
     },
     "canonicalURL": {
       "type": "string"
+    },
+    "cloudinarBannerUrl": {
+      "type": "string",
+      "required": true
     }
   }
 }
