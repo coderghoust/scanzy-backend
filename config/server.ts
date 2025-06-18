@@ -4,4 +4,6 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  // ✅ Add this line to allow external hosts (like ngrok)
+  allowedHosts: ['.ngrok-free.app', 'localhost', '127.0.0.1'],
 });
