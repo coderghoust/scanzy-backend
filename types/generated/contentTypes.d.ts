@@ -457,7 +457,9 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
     banner: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
     canonicalURL: Schema.Attribute.String;
-    cloudinarBannerUrl: Schema.Attribute.String & Schema.Attribute.Required;
+    cloudinarBannerUrl: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'https://5bl4nawh55.ufs.sh/f/aETJ5rHKEzpClnj0TmW3iFw05BH9N7M4rdogzV2CGZce1ERx'>;
     content: Schema.Attribute.Blocks & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -467,6 +469,7 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
       Schema.Attribute.SetMinMaxLength<{
         minLength: 60;
       }>;
+    keywords: Schema.Attribute.Text & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'> &
       Schema.Attribute.Private;

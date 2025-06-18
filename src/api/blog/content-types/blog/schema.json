@@ -65,6 +65,11 @@
     },
     "cloudinarBannerUrl": {
       "type": "string",
+      "default": "https://5bl4nawh55.ufs.sh/f/aETJ5rHKEzpClnj0TmW3iFw05BH9N7M4rdogzV2CGZce1ERx",
+      "required": true
+    },
+    "keywords": {
+      "type": "text",
       "required": true
     }
   }
