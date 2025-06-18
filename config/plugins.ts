@@ -8,7 +8,9 @@ export default () => ({
     },
   },
   'content-type-builder': {
-    
     enabled: true,
+    config: {
+      visible: true,
+    },
   },
 });

@@ -1,4 +1,6 @@
 export default ({ env }) => ({
+  isProduction: false, // 👈 This is the magic line to unlock C-T-B in production
+
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
   },
